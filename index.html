@@ -1,193 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosso Veloce | Italian Car Leasing</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age of Empires II - Web Edition</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">Rosso Veloce</div>
-            <ul class="nav-links">
-                <li><a href="#fleet">Our Fleet</a></li>
-                <li><a href="#plans">Leasing Plans</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Experience Italian Excellence</h1>
-            <p class="subtitle">Premium Italian car leasing for those who demand the extraordinary</p>
-            <a href="#plans" class="cta-button">View Our Plans</a>
+
+  <!-- Main Menu -->
+  <div id="main-menu">
+    <div class="menu-overlay"></div>
+    <div class="menu-content">
+      <h1 class="game-title">AGE OF EMPIRES II</h1>
+      <h2 class="game-subtitle">Web Edition</h2>
+      <div class="menu-buttons">
+        <button class="menu-btn primary" id="btn-single-player">Single Player</button>
+        <button class="menu-btn" id="btn-how-to-play">How to Play</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- How to Play Modal -->
+  <div id="how-to-play-modal" class="modal hidden">
+    <div class="modal-box">
+      <h2>How to Play</h2>
+      <div class="help-grid">
+        <div class="help-section">
+          <h3>Controls</h3>
+          <ul>
+            <li><b>Left Click</b> — Select unit / building</li>
+            <li><b>Right Click</b> — Move / Attack / Gather</li>
+            <li><b>Click + Drag</b> — Box-select units</li>
+            <li><b>WASD / Arrows</b> — Scroll map</li>
+            <li><b>Scroll Wheel</b> — Zoom in / out</li>
+            <li><b>Escape</b> — Deselect / Cancel build</li>
+          </ul>
         </div>
-    </header>
-
-    <main>
-        <section id="fleet" class="fleet-section">
-            <div class="container">
-                <h2>Our Prestigious Fleet</h2>
-                <p class="section-intro">From the streets of Maranello to your driveway. Experience the finest Italian automotive craftsmanship.</p>
-                <div class="fleet-grid">
-                    <div class="car-card">
-                        <div class="car-image">
-                            <img src="https://picsum.photos/400/250?random=1" alt="Sports car">
-                        </div>
-                        <h3>Ferrari</h3>
-                        <p>The prancing horse. Unmatched performance and racing heritage since 1947.</p>
-                    </div>
-                    <div class="car-card">
-                        <div class="car-image">
-                            <img src="https://picsum.photos/400/250?random=2" alt="Luxury sports car">
-                        </div>
-                        <h3>Lamborghini</h3>
-                        <p>Bold, aggressive, unforgettable. The raging bull delivers pure adrenaline.</p>
-                    </div>
-                    <div class="car-card">
-                        <div class="car-image">
-                            <img src="https://picsum.photos/400/250?random=3" alt="Grand tourer">
-                        </div>
-                        <h3>Maserati</h3>
-                        <p>Refined elegance meets exhilarating performance. The trident of luxury.</p>
-                    </div>
-                    <div class="car-card">
-                        <div class="car-image">
-                            <img src="https://picsum.photos/400/250?random=4" alt="Classic Italian car">
-                        </div>
-                        <h3>Alfa Romeo</h3>
-                        <p>Where passion meets engineering. Italian soul in every curve.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="plans" class="plans-section">
-            <div class="container">
-                <h2>Leasing Plans</h2>
-                <p class="section-intro">Choose the plan that matches your lifestyle. All plans include insurance, maintenance, and 24/7 roadside assistance.</p>
-                <div class="plans-grid">
-                    <div class="plan-card">
-                        <div class="plan-header">
-                            <span class="plan-badge">Light</span>
-                            <div class="plan-price">
-                                <span class="currency">€</span>
-                                <span class="amount">30</span>
-                                <span class="period">/day</span>
-                            </div>
-                        </div>
-                        <div class="plan-features">
-                            <ul>
-                                <li>Alfa Romeo Giulia</li>
-                                <li>200 km/day included</li>
-                                <li>Basic insurance coverage</li>
-                                <li>Standard maintenance</li>
-                                <li>Business hours support</li>
-                            </ul>
-                        </div>
-                        <a href="#contact" class="plan-button">Get Started</a>
-                    </div>
-                    <div class="plan-card featured">
-                        <div class="plan-header">
-                            <span class="plan-badge">Standard</span>
-                            <div class="plan-price">
-                                <span class="currency">€</span>
-                                <span class="amount">100</span>
-                                <span class="period">/day</span>
-                            </div>
-                        </div>
-                        <div class="plan-features">
-                            <ul>
-                                <li>Maserati Ghibli</li>
-                                <li>Unlimited kilometers</li>
-                                <li>Full insurance coverage</li>
-                                <li>Premium maintenance</li>
-                                <li>24/7 priority support</li>
-                                <li>Airport delivery</li>
-                            </ul>
-                        </div>
-                        <a href="#contact" class="plan-button">Get Started</a>
-                    </div>
-                    <div class="plan-card">
-                        <div class="plan-header">
-                            <span class="plan-badge">Premium</span>
-                            <div class="plan-price">
-                                <span class="currency">€</span>
-                                <span class="amount">500</span>
-                                <span class="period">/day</span>
-                            </div>
-                        </div>
-                        <div class="plan-features">
-                            <ul>
-                                <li>Ferrari or Lamborghini</li>
-                                <li>Unlimited kilometers</li>
-                                <li>Elite insurance package</li>
-                                <li>Concierge service</li>
-                                <li>24/7 VIP support</li>
-                                <li>Personal chauffeur option</li>
-                                <li>Track day experience</li>
-                            </ul>
-                        </div>
-                        <a href="#contact" class="plan-button">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="features-section">
-            <div class="container">
-                <h2>Why Choose Rosso Veloce</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <div class="feature-icon">&#9733;</div>
-                        <h3>Authentic Italian</h3>
-                        <p>Every car in our fleet is a genuine Italian masterpiece, maintained to perfection.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">&#9881;</div>
-                        <h3>Full Service</h3>
-                        <p>Insurance, maintenance, and support included. Just drive and enjoy.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">&#10004;</div>
-                        <h3>Flexible Terms</h3>
-                        <p>Daily, weekly, or monthly leasing. Adapt the experience to your needs.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">&#9829;</div>
-                        <h3>Passion First</h3>
-                        <p>We share your love for Italian cars. Experience the passion in every interaction.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2>Start Your Journey</h2>
-                <p class="section-intro">Ready to experience Italian automotive excellence? Contact us today.</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>Phone</strong>
-                        <p>+39 02 1234 5678</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Email</strong>
-                        <p>info@rossoveloce.it</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Location</strong>
-                        <p>Via Roma 123, Milano, Italy</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>Rosso Veloce &copy; 2026</p>
-            <p class="tagline">La passione italiana su quattro ruote</p>
+        <div class="help-section">
+          <h3>Resources</h3>
+          <ul>
+            <li>🌾 <b>Food</b> — Berries, Farms</li>
+            <li>🌲 <b>Wood</b> — Trees</li>
+            <li>💰 <b>Gold</b> — Gold Mines</li>
+            <li>🪨 <b>Stone</b> — Stone Mines</li>
+            <li>👥 <b>Population</b> — Build Houses</li>
+          </ul>
         </div>
-    </footer>
+        <div class="help-section">
+          <h3>Units</h3>
+          <ul>
+            <li><b>Villager</b> — Builds &amp; gathers</li>
+            <li><b>Militia</b> — Basic melee fighter</li>
+            <li><b>Archer</b> — Ranged attacker</li>
+            <li><b>Knight</b> — Heavy cavalry</li>
+          </ul>
+        </div>
+        <div class="help-section">
+          <h3>Buildings</h3>
+          <ul>
+            <li><b>Town Center</b> — Train villagers</li>
+            <li><b>House</b> — +5 population cap</li>
+            <li><b>Barracks</b> — Train military</li>
+            <li><b>Lumber Camp</b> — Wood drop-off</li>
+            <li><b>Mining Camp</b> — Gold/Stone drop-off</li>
+            <li><b>Farm</b> — Food source</li>
+          </ul>
+        </div>
+      </div>
+      <p class="win-note">🏆 <b>Win:</b> Destroy all enemy buildings!</p>
+      <button class="menu-btn primary" id="btn-close-help">Got it!</button>
+    </div>
+  </div>
+
+  <!-- Game Container -->
+  <div id="game-container" class="hidden">
+
+    <!-- Top HUD -->
+    <div id="hud-top">
+      <div class="res-bar">
+        <span class="res-item">🌾 <span id="food-count">200</span></span>
+        <span class="res-item">🌲 <span id="wood-count">200</span></span>
+        <span class="res-item">💰 <span id="gold-count">100</span></span>
+        <span class="res-item">🪨 <span id="stone-count">100</span></span>
+        <span class="res-sep"></span>
+        <span class="res-item">👥 <span id="pop-count">0</span>/<span id="pop-cap">10</span></span>
+        <span class="res-item age-item">⚔️ <span id="age-name">Dark Age</span></span>
+      </div>
+      <div class="hud-right">
+        <button class="hud-btn age-btn" id="btn-advance-age">▲ Advance Age</button>
+        <button class="hud-btn" id="btn-pause">⏸ Pause</button>
+      </div>
+    </div>
+
+    <!-- Canvas -->
+    <canvas id="game-canvas"></canvas>
+
+    <!-- Minimap -->
+    <div id="minimap-container">
+      <canvas id="minimap" width="160" height="160"></canvas>
+    </div>
+
+    <!-- Bottom Panel -->
+    <div id="bottom-panel">
+      <div id="selection-info">
+        <div id="sel-icon">🏰</div>
+        <div id="sel-details">
+          <div id="sel-name">Nothing selected</div>
+          <div id="sel-stats"></div>
+        </div>
+      </div>
+      <div id="action-panel">
+        <div id="action-buttons"></div>
+        <div id="build-queue-label" class="hidden">Queue:</div>
+        <div id="build-queue"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pause Menu -->
+  <div id="pause-menu" class="modal hidden">
+    <div class="modal-box">
+      <h2>Game Paused</h2>
+      <button class="menu-btn primary" id="btn-resume">▶ Resume</button>
+      <button class="menu-btn" id="btn-restart">↺ Restart</button>
+      <button class="menu-btn" id="btn-main-menu">⌂ Main Menu</button>
+    </div>
+  </div>
+
+  <!-- End Screen -->
+  <div id="end-screen" class="modal hidden">
+    <div class="modal-box">
+      <h2 id="end-title">Victory!</h2>
+      <p id="end-message"></p>
+      <button class="menu-btn primary" id="btn-play-again">Play Again</button>
+      <button class="menu-btn" id="btn-end-main-menu">Main Menu</button>
+    </div>
+  </div>
+
+  <!-- Notification -->
+  <div id="notification" class="hidden"></div>
+
+  <script src="game.js"></script>
 </body>
 </html>
